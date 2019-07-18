@@ -27,10 +27,10 @@ public class ControllerLobbyTabButton : MonoBehaviour
         layoutElement = GetComponent<LayoutElement>();
         rectTransform = GetComponent<RectTransform>();
 
-        serviceLobby.OnSelectionChanged += onSelectionChanged;
+        serviceLobby.OnSelectionChanged += OnSelectionChanged;
     }
 
-    private void onSelectionChanged(Tab selectedTab)
+    private void OnSelectionChanged(Tab selectedTab)
     {
         if (tab != selectedTab && isSelected) {
             StartCoroutine(DisableSelection());
