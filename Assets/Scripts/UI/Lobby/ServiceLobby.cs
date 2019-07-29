@@ -28,7 +28,7 @@ public class ServiceLobby : MonoBehaviour
     {
         if(tab != selectedTab)
         {
-            Debug.Log("Changing tab from:" + selectedTab + " to:" + tab);
+            //Debug.Log("Changing tab from:" + selectedTab + " to:" + tab);
             selectedTab = tab;
             OnSelectionChanged?.Invoke(selectedTab);
         }
